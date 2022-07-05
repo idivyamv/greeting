@@ -66,7 +66,7 @@ async function main() {
   // send mail with defined transport object
   let info = await transporter.sendMail({
     from: 'wishgreeting2022@gmail.com', // sender address
-    to: visitor.frndname+'divya2022first@gmail.com', // list of receivers
+    to: visitor.frndname+visitor.email, // list of receivers
     subject: "Happy 2022", // Subject line
     text: 'hi'+ visitor.frndname+' your friend '+  visitor.uname +' send you Happy 2022 wishes, check it 👉🏻👉🏻 ' + 'https://wish2022happy.herokuapp.com/greeting/' +visitor.id+''
   });
