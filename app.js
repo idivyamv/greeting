@@ -53,7 +53,7 @@ async function main() {
     uname       : req.body.visitor.uname,
     frndname    : req.body.visitor.frndname,
     email       : req.body.visitor.email,
-    id : req.body.visitor.id
+    id : req.body.visitor._id
     }
   // create reusable transporter object using the default SMTP transport
   let transporter = nodemailer.createTransport({
