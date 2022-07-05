@@ -70,7 +70,7 @@ async function main() {
     subject: "Happy 2022", // Subject line
     text: "Hello world?", // plain text body
     html: "<b>Hello world?</b>", // html body
-    text: 'hi'+ visitor.frndname+' your friend '+  visitor.uname +' send you Happy 2022 wishes, check it 👉🏻👉🏻 ' + '' +visitor.id+''
+    text: 'hi'+ visitor.frndname+' your friend '+  visitor.uname +' send you Happy 2022 wishes, check it 👉🏻👉🏻 ' + 'https://wish2022happy.herokuapp.com/greeting/' +visitor.id+''
   });
 
   console.log("Message sent: %s", info.messageId);
