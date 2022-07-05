@@ -68,13 +68,11 @@ async function main() {
     from: 'wishgreeting2022@gmail.com', // sender address
     to: visitor.frndname+'divya2022first@gmail.com', // list of receivers
     subject: "Happy 2022", // Subject line
-    text: "Hello world?", // plain text body
-    html: "<b>Hello world?</b>", // html body
     text: 'hi'+ visitor.frndname+' your friend '+  visitor.uname +' send you Happy 2022 wishes, check it 👉🏻👉🏻 ' + 'https://wish2022happy.herokuapp.com/greeting/' +visitor.id+''
   });
 
   console.log("Message sent: %s", info.messageId);
-  alert('Mail sent successfully');
+  res.status(200).json({'message': 'Mail sent successfully'});
 }
 
 main().catch(console.error);
