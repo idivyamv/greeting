@@ -74,6 +74,7 @@ async function main() {
   });
 
   console.log("Message sent: %s", info.messageId);
+  alert('Mail sent successfully');
 }
 
 main().catch(console.error);
